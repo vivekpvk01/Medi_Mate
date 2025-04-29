@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { Search, DollarSign, ArrowUpDown, Check } from "lucide-react"
+import { Search, IndianRupee, ArrowUpDown, Check } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
@@ -254,7 +254,7 @@ export default function ComparePage() {
                           <TableCell className="font-medium">{price.pharmacy}</TableCell>
                           <TableCell>
                             <div className="flex items-center">
-                              <DollarSign className="h-4 w-4 mr-1 text-muted-foreground" />
+                              <IndianRupee className="h-4 w-4 mr-1 text-muted-foreground" />
                               <span className={price.price === lowestPrice ? "font-bold text-primary" : ""}>
                                 {price.price.toFixed(2)}
                               </span>
